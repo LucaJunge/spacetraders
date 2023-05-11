@@ -1,0 +1,31 @@
+{
+  "name": "spacetraders",
+  "version": "0.0.1",
+  "description": "My spacetraders.io game files",
+  "main": "app.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucaJunge/spacetraders.git"
+  },
+  "keywords": [
+    "game",
+    "node",
+    "api"
+  ],
+  "author": "Luca Junge <LucaJunge@posteo.de> (https://luca-junge.de/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LucaJunge/spacetraders/issues"
+  },
+  "homepage": "https://github.com/LucaJunge/spacetraders#readme",
+  "dependencies": {
+
+  }
+}

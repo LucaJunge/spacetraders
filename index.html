@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/spacetraders-logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpaceTraders</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>SpaceTraders.io</h1>
+      <div id="agent-info">
+        <div>
+          <span>ACCOUNT ID: </span><span id="account-id">loading...</span>
+        </div>
+        <div>
+          <span>CREDITS: </span><span id="credits">loading...</span>
+        </div>
+        <div>
+          <span>HEADQUARTERS: </span><span id="headquarters">loading...</span>
+        </div>
+        <div>
+          <span>SYMBOL: </span><span id="symbol">loading...</span>
+        </div>
+      </div>
+      <canvas id="canvas" width="300" height="300"></canvas>
+      <div id="#credential-form" class="hidden">
+        <label for="input-token">::ACCESS_TOKEN:: </label>
+        <input id="input-token" name="input-token" type="password" />
+        <a class="button" id="access-token-save-button">Save Access Token in Local Storage</a>
+      </div>
+      <a id="get-universe-button" class="button">Get Universe</a>
+    </div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

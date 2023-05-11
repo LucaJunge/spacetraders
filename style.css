@@ -1,0 +1,77 @@
+:root {
+  /* palette from https://colorhunt.co/palette/03001c301e675b8fb9b6eada */
+  --palette1: #03001C;
+  --palette2: #301E67;
+  --palette3: #5B8FB9;
+  --palette4: #B6EADA;
+
+  --radar-bg: #08f26e;
+  --radar-objects: #059142;
+  --black: #000000;
+  --white: #FFFFFF;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  margin: 0.5em;
+  border: 2px solid var(--palette2);
+  padding: 1em;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--palette1);
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--palette3);
+}
+
+.button {
+  display:inline-block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  padding: 0.6em;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--palette3);
+  border-radius: 20px 0px 20px 0px;
+  border: 2px solid var(--palette3);
+  transition: background-color 0.15s;
+}
+
+.button:hover {
+  background-color: var(--palette2);
+}
+
+canvas {
+  background-color: var(--radar-bg);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+#account-id {
+  filter: blur(5px);
+  transition: filter 0.1s;
+}
+
+#account-id:hover {
+  filter: none;
+}
