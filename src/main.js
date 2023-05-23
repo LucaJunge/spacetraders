@@ -19,6 +19,9 @@ async function init() {
 
     // Get current systems
     await getSystems()
+
+    // Get contracts
+    await getContracts()
 }
 init()
 
@@ -74,6 +77,27 @@ async function getSystems() {
     }
 
     drawSystems(status)
+}
+
+async function getContracts() {
+
+    // Get status from localStorage
+    let contractsLocal = localStorage.getItem("contracts")
+
+    let status = null
+
+    // if its not in localStorage get it from the api
+    if(contractsLocal == null) {
+        let response = await fetch(config.endpointContracts, options)
+        let json = await response.json()
+        contractsLocal = json.data
+        localStorage.setItem("contracts", JSON.stringify(contractsLocal))
+        status = contractsLocal
+    } else {
+        status = JSON.parse(contractsLocal)
+    }
+
+    console.log(status)
 }
 
 function saveAccessToken() {

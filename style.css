@@ -12,8 +12,8 @@
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("/Inter-VariableFont_slnt\,wght.ttf");
+  font-family: "Share Tech Mono";
+  src: url("/ShareTechMono-Regular.ttf");
 }
 
 * {
@@ -30,13 +30,13 @@ html, body {
   margin: 0px;
   padding: 0px;
   background-color: var(--palette1);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Share Tech Mono', Courier, monospace;
   color: var(--palette3);
 }
 
 .button {
   display:inline-block;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Share Tech Mono', Courier, monospace;
   font-size: 1em;
   padding: 0.6em;
   font-weight: bold;

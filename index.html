@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/spacetraders-logo.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SpaceTraders</title>
-  </head>
-  <body>
-    <div id="app">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/spacetraders-logo.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpaceTraders</title>
+</head>
+
+<body>
+  <div id="app">
+    <div id="left-panel">
       <h1>SpaceTraders.io</h1>
       <div id="agent-info">
         <div>
@@ -31,6 +34,14 @@
       </div>
       <a id="get-universe-button" class="button">Get Universe</a>
     </div>
-    <script type="module" src="src/main.js"></script>
-  </body>
+
+    <div id="right-panel">
+      <div id="contracts-view">
+        Contracts are loading
+      </div>
+    </div>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+
 </html>
